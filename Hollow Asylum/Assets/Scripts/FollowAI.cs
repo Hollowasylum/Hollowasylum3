@@ -1,40 +1,46 @@
 using UnityEngine;
 
-public class AdvancedFollowAI : MonoBehaviour
+public class FollowAI : MonoBehaviour
 {
-    public Transform target;               // The target to follow (Riley)
-    public float followSpeed = 3f;         // Speed when following the target
-    public float sprintSpeed = 5f;         // Speed when sprinting
-    public float smoothTime = 0.3f;        // Time to smooth the movement
-
-    private Rigidbody2D rb;                // Rigidbody2D component for movement
-    private PlayerMovement targetMovement; // Reference to Riley's PlayerMovement script
-    private Vector2 velocity = Vector2.zero; // Used for smoothing the movement
+    public Transform riley;  // Reference to Riley's transform
+    public float followDistance = 1f; // The minimum distance to maintain from Riley
+    private Vector3 lastRileyPosition; // To track Riley's last position
+    private Vector3 rileyVelocity; // To track Riley's velocity
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();   // Get the Rigidbody2D component
-        if (target != null)
+        // Initialize Riley's last position
+        if (riley != null)
         {
-            targetMovement = target.GetComponent<PlayerMovement>(); // Get Riley's PlayerMovement script
+            lastRileyPosition = riley.position;
         }
     }
 
-    void FixedUpdate()
+    void Update()
     {
-        if (target != null && targetMovement != null)
+        // Ensure Riley exists before proceeding
+        if (riley != null)
         {
-            // Calculate direction to the target
-            Vector2 direction = (target.position - transform.position).normalized;
+            // Calculate the distance between Daniel and Riley
+            float distanceToRiley = Vector2.Distance(transform.position, riley.position);
 
-            // Get Riley's current speed (includes sprint speed)
-            float targetSpeed = targetMovement.moveSpeed;
+            // Calculate Riley's velocity (speed and direction)
+            rileyVelocity = (riley.position - lastRileyPosition) / Time.deltaTime;
 
-            // Calculate target velocity based on Riley's speed
-            Vector2 targetVelocity = direction * targetSpeed;
+            // Check if Daniel is above or below Riley due to a fall
+            if (riley.position.y != lastRileyPosition.y)
+            {
+                // If Riley moves vertically, allow Daniel to follow immediately
+                transform.position = Vector2.MoveTowards(transform.position, riley.position, rileyVelocity.magnitude * Time.deltaTime);
+            }
+            else if (distanceToRiley > followDistance)
+            {
+                // Follow Riley normally when the distance is greater than the follow distance
+                transform.position = Vector2.MoveTowards(transform.position, riley.position, rileyVelocity.magnitude * Time.deltaTime);
+            }
 
-            // Smoothly move towards the target
-            rb.velocity = Vector2.SmoothDamp(rb.velocity, targetVelocity, ref velocity, smoothTime);
+            // Update Riley's last known position
+            lastRileyPosition = riley.position;
         }
     }
 }
