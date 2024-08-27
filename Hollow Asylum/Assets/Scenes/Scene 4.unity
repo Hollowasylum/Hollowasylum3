@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 15163122}
   - component: {fileID: 15163121}
   - component: {fileID: 15163123}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -263,7 +263,7 @@ GameObject:
   - component: {fileID: 27774017}
   - component: {fileID: 27774016}
   - component: {fileID: 27774018}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -393,7 +393,7 @@ GameObject:
   - component: {fileID: 70690442}
   - component: {fileID: 70690441}
   - component: {fileID: 70690443}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -523,7 +523,7 @@ GameObject:
   - component: {fileID: 87985819}
   - component: {fileID: 87985818}
   - component: {fileID: 87985817}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (58)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -653,7 +653,7 @@ GameObject:
   - component: {fileID: 154207887}
   - component: {fileID: 154207886}
   - component: {fileID: 154207888}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -783,7 +783,7 @@ GameObject:
   - component: {fileID: 178416231}
   - component: {fileID: 178416230}
   - component: {fileID: 178416232}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (31)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -913,7 +913,7 @@ GameObject:
   - component: {fileID: 250662355}
   - component: {fileID: 250662354}
   - component: {fileID: 250662356}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (29)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1043,7 +1043,7 @@ GameObject:
   - component: {fileID: 261123694}
   - component: {fileID: 261123693}
   - component: {fileID: 261123692}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (60)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1173,7 +1173,7 @@ GameObject:
   - component: {fileID: 301408255}
   - component: {fileID: 301408254}
   - component: {fileID: 301408253}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (50)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1303,7 +1303,7 @@ GameObject:
   - component: {fileID: 340094617}
   - component: {fileID: 340094616}
   - component: {fileID: 340094615}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (39)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1433,7 +1433,7 @@ GameObject:
   - component: {fileID: 381160757}
   - component: {fileID: 381160756}
   - component: {fileID: 381160755}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (38)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1563,7 +1563,7 @@ GameObject:
   - component: {fileID: 389774955}
   - component: {fileID: 389774954}
   - component: {fileID: 389774956}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1693,7 +1693,7 @@ GameObject:
   - component: {fileID: 395869191}
   - component: {fileID: 395869190}
   - component: {fileID: 395869192}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1823,7 +1823,7 @@ GameObject:
   - component: {fileID: 416967697}
   - component: {fileID: 416967696}
   - component: {fileID: 416967695}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (43)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1953,7 +1953,7 @@ GameObject:
   - component: {fileID: 425285940}
   - component: {fileID: 425285939}
   - component: {fileID: 425285941}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2083,7 +2083,7 @@ GameObject:
   - component: {fileID: 441811879}
   - component: {fileID: 441811878}
   - component: {fileID: 441811880}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (33)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2213,7 +2213,7 @@ GameObject:
   - component: {fileID: 452480708}
   - component: {fileID: 452480707}
   - component: {fileID: 452480706}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (42)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2343,7 +2343,7 @@ GameObject:
   - component: {fileID: 478860849}
   - component: {fileID: 478860848}
   - component: {fileID: 478860847}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (51)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2473,7 +2473,7 @@ GameObject:
   - component: {fileID: 509144059}
   - component: {fileID: 509144058}
   - component: {fileID: 509144060}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2802,7 +2802,7 @@ GameObject:
   - component: {fileID: 598179787}
   - component: {fileID: 598179786}
   - component: {fileID: 598179785}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (59)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2932,7 +2932,7 @@ GameObject:
   - component: {fileID: 638093538}
   - component: {fileID: 638093537}
   - component: {fileID: 638093539}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3061,7 +3061,7 @@ GameObject:
   m_Component:
   - component: {fileID: 649393802}
   - component: {fileID: 649393801}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall1 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3309,7 +3309,7 @@ GameObject:
   - component: {fileID: 733351532}
   - component: {fileID: 733351531}
   - component: {fileID: 733351530}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (49)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3439,7 +3439,7 @@ GameObject:
   - component: {fileID: 762533879}
   - component: {fileID: 762533878}
   - component: {fileID: 762533880}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3507,8 +3507,8 @@ Transform:
   m_GameObject: {fileID: 762533877}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.7043655, w: 0.70983756}
-  m_LocalPosition: {x: -12.35, y: -12.81, z: 0}
-  m_LocalScale: {x: 2.5540137, y: 0.29720375, z: 1}
+  m_LocalPosition: {x: -12.3492, y: -12.9135, z: 0}
+  m_LocalScale: {x: 2.3471386, y: 0.29720375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -3569,7 +3569,7 @@ GameObject:
   - component: {fileID: 774059598}
   - component: {fileID: 774059597}
   - component: {fileID: 774059599}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3699,7 +3699,7 @@ GameObject:
   - component: {fileID: 793292671}
   - component: {fileID: 793292670}
   - component: {fileID: 793292669}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (53)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3829,7 +3829,7 @@ GameObject:
   - component: {fileID: 814159902}
   - component: {fileID: 814159901}
   - component: {fileID: 814159900}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (46)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3959,7 +3959,7 @@ GameObject:
   - component: {fileID: 819230894}
   - component: {fileID: 819230893}
   - component: {fileID: 819230892}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (56)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4089,7 +4089,7 @@ GameObject:
   - component: {fileID: 836372131}
   - component: {fileID: 836372130}
   - component: {fileID: 836372129}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (37)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4219,7 +4219,7 @@ GameObject:
   - component: {fileID: 849366381}
   - component: {fileID: 849366380}
   - component: {fileID: 849366382}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4442,7 +4442,7 @@ GameObject:
   - component: {fileID: 910494867}
   - component: {fileID: 910494866}
   - component: {fileID: 910494868}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4572,7 +4572,7 @@ GameObject:
   - component: {fileID: 932940827}
   - component: {fileID: 932940826}
   - component: {fileID: 932940828}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4702,7 +4702,7 @@ GameObject:
   - component: {fileID: 946349628}
   - component: {fileID: 946349627}
   - component: {fileID: 946349626}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (32)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4920,7 +4920,7 @@ GameObject:
   - component: {fileID: 1085816051}
   - component: {fileID: 1085816050}
   - component: {fileID: 1085816052}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5050,7 +5050,7 @@ GameObject:
   - component: {fileID: 1102965308}
   - component: {fileID: 1102965307}
   - component: {fileID: 1102965309}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5180,7 +5180,7 @@ GameObject:
   - component: {fileID: 1106209386}
   - component: {fileID: 1106209385}
   - component: {fileID: 1106209384}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (54)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5310,7 +5310,7 @@ GameObject:
   - component: {fileID: 1133227792}
   - component: {fileID: 1133227791}
   - component: {fileID: 1133227793}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (28)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5441,7 +5441,7 @@ GameObject:
   - component: {fileID: 1145265524}
   - component: {fileID: 1145265526}
   - component: {fileID: 1145265527}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5583,7 +5583,7 @@ GameObject:
   - component: {fileID: 1173260823}
   - component: {fileID: 1173260822}
   - component: {fileID: 1173260824}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5713,7 +5713,7 @@ GameObject:
   - component: {fileID: 1206679668}
   - component: {fileID: 1206679667}
   - component: {fileID: 1206679669}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5843,7 +5843,7 @@ GameObject:
   - component: {fileID: 1337054495}
   - component: {fileID: 1337054494}
   - component: {fileID: 1337054496}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6045,7 +6045,7 @@ GameObject:
   - component: {fileID: 1480575202}
   - component: {fileID: 1480575201}
   - component: {fileID: 1480575203}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6175,7 +6175,7 @@ GameObject:
   - component: {fileID: 1507932324}
   - component: {fileID: 1507932323}
   - component: {fileID: 1507932325}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6305,7 +6305,7 @@ GameObject:
   - component: {fileID: 1562867163}
   - component: {fileID: 1562867162}
   - component: {fileID: 1562867161}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (55)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6435,7 +6435,7 @@ GameObject:
   - component: {fileID: 1570578801}
   - component: {fileID: 1570578800}
   - component: {fileID: 1570578802}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (26)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6565,7 +6565,7 @@ GameObject:
   - component: {fileID: 1578182790}
   - component: {fileID: 1578182789}
   - component: {fileID: 1578182791}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6695,7 +6695,7 @@ GameObject:
   - component: {fileID: 1599134979}
   - component: {fileID: 1599134978}
   - component: {fileID: 1599134980}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6991,7 +6991,7 @@ GameObject:
   - component: {fileID: 1623128502}
   - component: {fileID: 1623128501}
   - component: {fileID: 1623128500}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (45)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7121,7 +7121,7 @@ GameObject:
   - component: {fileID: 1639105646}
   - component: {fileID: 1639105645}
   - component: {fileID: 1639105647}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7251,7 +7251,7 @@ GameObject:
   - component: {fileID: 1699772499}
   - component: {fileID: 1699772498}
   - component: {fileID: 1699772497}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (44)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7381,7 +7381,7 @@ GameObject:
   - component: {fileID: 1719687271}
   - component: {fileID: 1719687270}
   - component: {fileID: 1719687269}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (47)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7511,7 +7511,7 @@ GameObject:
   - component: {fileID: 1733836842}
   - component: {fileID: 1733836841}
   - component: {fileID: 1733836843}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7641,7 +7641,7 @@ GameObject:
   - component: {fileID: 1778336759}
   - component: {fileID: 1778336758}
   - component: {fileID: 1778336757}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (57)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7771,7 +7771,7 @@ GameObject:
   - component: {fileID: 1824529857}
   - component: {fileID: 1824529856}
   - component: {fileID: 1824529855}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (52)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7901,7 +7901,7 @@ GameObject:
   - component: {fileID: 1843780556}
   - component: {fileID: 1843780555}
   - component: {fileID: 1843780554}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (40)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8056,6 +8056,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   riley: {fileID: 1614793814}
   followSpeed: 5
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 2048
 --- !u!50 &1976951747
 Rigidbody2D:
   serializedVersion: 4
@@ -8263,7 +8266,7 @@ GameObject:
   - component: {fileID: 1980825221}
   - component: {fileID: 1980825220}
   - component: {fileID: 1980825219}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (35)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8393,7 +8396,7 @@ GameObject:
   - component: {fileID: 2009272581}
   - component: {fileID: 2009272580}
   - component: {fileID: 2009272582}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8523,7 +8526,7 @@ GameObject:
   - component: {fileID: 2032238086}
   - component: {fileID: 2032238085}
   - component: {fileID: 2032238087}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (30)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8653,7 +8656,7 @@ GameObject:
   - component: {fileID: 2039933385}
   - component: {fileID: 2039933384}
   - component: {fileID: 2039933386}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (27)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8783,7 +8786,7 @@ GameObject:
   - component: {fileID: 2055328938}
   - component: {fileID: 2055328937}
   - component: {fileID: 2055328936}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (34)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8913,7 +8916,7 @@ GameObject:
   - component: {fileID: 2056742734}
   - component: {fileID: 2056742733}
   - component: {fileID: 2056742735}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9043,7 +9046,7 @@ GameObject:
   - component: {fileID: 2073236447}
   - component: {fileID: 2073236446}
   - component: {fileID: 2073236448}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9173,7 +9176,7 @@ GameObject:
   - component: {fileID: 2079762460}
   - component: {fileID: 2079762459}
   - component: {fileID: 2079762458}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (36)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9391,7 +9394,7 @@ GameObject:
   - component: {fileID: 2128569989}
   - component: {fileID: 2128569988}
   - component: {fileID: 2128569987}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VentWall2 (41)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

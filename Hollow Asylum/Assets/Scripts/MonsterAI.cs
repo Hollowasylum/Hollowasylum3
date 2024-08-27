@@ -5,6 +5,7 @@ public class MonsterAI : MonoBehaviour
 {
     public Transform riley;      // Reference to Riley's Transform
     public float followSpeed = 2f; // Speed at which the monster follows
+    public LayerMask obstacleMask; // LayerMask for walls/obstacles
 
     private bool shouldFollow = false; // Determines if the monster should follow
 
@@ -12,15 +13,23 @@ public class MonsterAI : MonoBehaviour
     {
         if (shouldFollow)
         {
-            // Always follow Riley
             FollowRiley();
         }
     }
 
     void FollowRiley()
     {
-        // Move the monster toward Riley's position
-        transform.position = Vector2.MoveTowards(transform.position, riley.position, followSpeed * Time.deltaTime);
+        // Calculate direction towards Riley
+        Vector2 direction = (riley.position - transform.position).normalized;
+
+        // Check if there's an obstacle (wall) in the way
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, 1f, obstacleMask);
+
+        // Only move if there is no wall directly in front
+        if (!hit.collider)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, riley.position, followSpeed * Time.deltaTime);
+        }
     }
 
     void OnTriggerEnter2D(Collider2D collision)
