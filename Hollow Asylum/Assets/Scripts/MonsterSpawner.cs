@@ -2,24 +2,43 @@ using UnityEngine;
 
 public class MonsterSpawner : MonoBehaviour
 {
-    public GameObject monsterPrefab; // The monster prefab to spawn
-    public Transform leftSpawnPoint; // Left spawn point
-    public Transform rightSpawnPoint; // Right spawn point
+    public GameObject monsterPrefab; // Assign the monster prefab in the Inspector
+    public Transform[] spawnPoints;  // Array of spawn points
+    private GameObject currentMonster;
 
-    // This function spawns a monster at a random location (left or right)
-    public GameObject SpawnMonster()
+    public void SpawnMonster()
     {
-        // Randomly choose between left and right
-        Transform chosenSpawnPoint = Random.value > 0.5f ? leftSpawnPoint : rightSpawnPoint;
+        // Safety check to prevent IndexOutOfRangeException
+        if (spawnPoints.Length == 0)
+        {
+            Debug.LogError("No spawn points assigned to the MonsterSpawner.");
+            return; // Exit the method if no spawn points are available
+        }
 
-        // Spawn the monster at the chosen position
-        GameObject spawnedMonster = Instantiate(monsterPrefab, chosenSpawnPoint.position, Quaternion.identity);
+        // Spawn the monster at a random spawn point
+        int randomIndex = Random.Range(0, spawnPoints.Length);
+        Vector2 spawnPosition = spawnPoints[randomIndex].position;
 
-        // Start the monster chasing Riley
-        MonsterBehavior monsterBehavior = spawnedMonster.GetComponent<MonsterBehavior>();
-        monsterBehavior.StartChasing();
+        // Destroy the current monster if one exists (optional)
+        if (currentMonster != null)
+        {
+            Destroy(currentMonster);
+        }
 
-        // Return the spawned monster so we can track it
-        return spawnedMonster;
+        // Instantiate the new monster
+        currentMonster = Instantiate(monsterPrefab, spawnPosition, Quaternion.identity);
+
+        // Get the MonsterBehavior component of the newly spawned monster
+        MonsterBehavior monsterBehavior = currentMonster.GetComponent<MonsterBehavior>();
+
+        if (monsterBehavior != null)
+        {
+            // Start the timed chase for 4.5 seconds
+            monsterBehavior.StartChasingForLimitedTime(6f);
+        }
+        else
+        {
+            Debug.LogError("MonsterBehavior component not found on the spawned monster.");
+        }
     }
 }

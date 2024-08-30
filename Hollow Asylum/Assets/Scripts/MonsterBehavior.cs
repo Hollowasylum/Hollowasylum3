@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class MonsterBehavior : MonoBehaviour
 {
@@ -17,15 +18,18 @@ public class MonsterBehavior : MonoBehaviour
         }
     }
 
-    public void StartChasing()
+    // Call this method to start chasing Riley for a limited time
+    public void StartChasingForLimitedTime(float chaseDuration)
     {
-        isChasing = true; // Start chasing Riley
+        StartCoroutine(ChaseForTime(chaseDuration)); // Start the chase timer
     }
 
-    public void StopChasing()
+    // Coroutine to handle the timed chase
+    IEnumerator ChaseForTime(float chaseDuration)
     {
-        isChasing = false; // Stop chasing Riley
-        // Optionally, disable the monster here
-        this.gameObject.SetActive(false); // Hide the monster if needed after stopping
+        isChasing = true; // Start chasing
+        yield return new WaitForSeconds(chaseDuration); // Wait for the specified time (e.g., 4.5 seconds)
+        isChasing = false; // Stop chasing after the time is up
+        Debug.Log("Chase stopped after " + chaseDuration + " seconds.");
     }
 }
