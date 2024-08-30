@@ -34,7 +34,7 @@ public class MonsterSpawner : MonoBehaviour
         if (monsterBehavior != null)
         {
             // Start the timed chase for 4.5 seconds
-            monsterBehavior.StartChasingForLimitedTime(6f);
+            monsterBehavior.StartChasingForLimitedTime(9f);
         }
         else
         {
