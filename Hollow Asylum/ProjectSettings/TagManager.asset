@@ -8,6 +8,7 @@ TagManager:
   - Daniel
   - Wall
   - Monster
+  - Monster 2
   layers:
   - Default
   - TransparentFX
