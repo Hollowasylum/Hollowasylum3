@@ -2,21 +2,26 @@ using UnityEngine;
 
 public class FallTriggerScript : MonoBehaviour
 {
+    private MonsterSpawner spawner;
+
+    private void Start()
+    {
+        // Find the MonsterSpawner in the scene
+        spawner = FindObjectOfType<MonsterSpawner>();
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Riley"))
         {
-            // Find the MonsterSpawner script
-            MonsterSpawner spawner = FindObjectOfType<MonsterSpawner>();
-
+            // Call the SpawnMonster method when Riley hits the fall trigger
             if (spawner != null)
             {
-                // Spawn the monster
                 spawner.SpawnMonster();
             }
             else
             {
-                Debug.Log("MonsterSpawner not found.");
+                Debug.LogError("MonsterSpawner not found.");
             }
         }
     }
