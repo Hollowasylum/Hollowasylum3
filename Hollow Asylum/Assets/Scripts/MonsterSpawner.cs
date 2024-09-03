@@ -34,24 +34,19 @@ public class MonsterSpawner : MonoBehaviour
         switch (fallTriggerCount)
         {
             case 1:
-                // Randomly spawn left or right for FallTrigger1
                 spawnPosition = (Random.Range(0, 2) == 0) ? leftSpawnPoint1.position : rightSpawnPoint1.position;
                 break;
             case 2:
-                // Randomly spawn left or right for FallTrigger2
                 spawnPosition = (Random.Range(0, 2) == 0) ? leftSpawnPoint2.position : rightSpawnPoint2.position;
                 break;
             case 3:
-                // Randomly spawn left or right for FallTrigger3
                 spawnPosition = (Random.Range(0, 2) == 0) ? leftSpawnPoint3.position : rightSpawnPoint3.position;
                 break;
             case 4:
             case 5:
-                // Always spawn left for both FallTrigger4 and FallTrigger5 using LeftSpawnPoint4
                 spawnPosition = leftSpawnPoint4.position;
                 break;
             case 6:
-                // Always spawn right for FallTrigger6
                 spawnPosition = rightSpawnPoint6.position;
                 break;
             default:
@@ -66,7 +61,7 @@ public class MonsterSpawner : MonoBehaviour
         MonsterBehavior monsterBehavior = currentMonster.GetComponent<MonsterBehavior>();
         if (monsterBehavior != null)
         {
-            monsterBehavior.StartChasingForLimitedTime(9f);
+            monsterBehavior.StartChasingForLimitedTime(9f); // Chase for 9 seconds
         }
         else
         {

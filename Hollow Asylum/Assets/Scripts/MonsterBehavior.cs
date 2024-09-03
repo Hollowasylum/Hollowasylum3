@@ -1,12 +1,10 @@
 using UnityEngine;
-using System.Collections;
 
 public class MonsterBehavior : MonoBehaviour
 {
     public Transform player; // Riley's position (assign in Unity)
-    public float moveSpeed = 5f; // How fast the monster moves
-
-    private bool isChasing = false; // Controls whether the monster is chasing
+    public float moveSpeed = 5f; // Monster's speed
+    private bool isChasing = false;
 
     void Update()
     {
@@ -18,18 +16,20 @@ public class MonsterBehavior : MonoBehaviour
         }
     }
 
-    // Call this method to start chasing Riley for a limited time
-    public void StartChasingForLimitedTime(float chaseDuration)
+    public void StartChasing()
     {
-        StartCoroutine(ChaseForTime(chaseDuration)); // Start the chase timer
+        isChasing = true;
     }
 
-    // Coroutine to handle the timed chase
-    IEnumerator ChaseForTime(float chaseDuration)
+    public void StopChasing()
     {
-        isChasing = true; // Start chasing
-        yield return new WaitForSeconds(chaseDuration); // Wait for the specified time (e.g., 4.5 seconds)
-        isChasing = false; // Stop chasing after the time is up
-        Debug.Log("Chase stopped after " + chaseDuration + " seconds.");
+        isChasing = false;
+    }
+
+    // Start chasing for a limited time
+    public void StartChasingForLimitedTime(float chaseDuration)
+    {
+        StartChasing(); // Start chasing Riley
+        Invoke(nameof(StopChasing), chaseDuration); // Stop chasing after a delay
     }
 }

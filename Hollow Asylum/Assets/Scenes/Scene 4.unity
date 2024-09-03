@@ -3320,7 +3320,7 @@ Transform:
   m_GameObject: {fileID: 357319911}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 55.6, y: -14.3, z: -0.20825437}
+  m_LocalPosition: {x: 54.5, y: -14.3, z: -0.20825437}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4215,7 +4215,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -7493,6 +7493,7 @@ GameObject:
   m_Component:
   - component: {fileID: 972732187}
   - component: {fileID: 972732186}
+  - component: {fileID: 972732188}
   m_Layer: 0
   m_Name: FallTrigger2
   m_TagString: Untagged
@@ -7560,6 +7561,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &972732188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 972732185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 903361b7906a44abe9edf9af73190bb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &977890216
 GameObject:
   m_ObjectHideFlags: 0
@@ -8178,6 +8191,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1031695879}
   - component: {fileID: 1031695878}
+  - component: {fileID: 1031695880}
   m_Layer: 0
   m_Name: FallTrigger5
   m_TagString: Untagged
@@ -8245,6 +8259,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1031695880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031695877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 903361b7906a44abe9edf9af73190bb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1032819864
 GameObject:
   m_ObjectHideFlags: 0
@@ -12666,6 +12692,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1565511445}
   - component: {fileID: 1565511444}
+  - component: {fileID: 1565511446}
   m_Layer: 0
   m_Name: FallTrigger4
   m_TagString: Untagged
@@ -12733,6 +12760,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1565511446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1565511443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 903361b7906a44abe9edf9af73190bb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1603253340
 GameObject:
   m_ObjectHideFlags: 0
@@ -14531,6 +14570,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1783900882}
   - component: {fileID: 1783900881}
+  - component: {fileID: 1783900883}
   m_Layer: 0
   m_Name: FallTrigger3
   m_TagString: Untagged
@@ -14598,6 +14638,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1783900883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783900880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 903361b7906a44abe9edf9af73190bb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1796041998
 GameObject:
   m_ObjectHideFlags: 0
@@ -15648,6 +15700,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1907681791}
   - component: {fileID: 1907681790}
+  - component: {fileID: 1907681792}
   m_Layer: 0
   m_Name: FallTrigger6
   m_TagString: Untagged
@@ -15715,6 +15768,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1907681792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907681789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 903361b7906a44abe9edf9af73190bb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1918755643
 GameObject:
   m_ObjectHideFlags: 0
