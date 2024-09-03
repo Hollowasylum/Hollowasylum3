@@ -5,12 +5,9 @@ public class MonsterSpawner : MonoBehaviour
     // Spawn points for each fall trigger
     public Transform leftSpawnPoint1;
     public Transform rightSpawnPoint1;
-    public Transform leftSpawnPoint2;
-    public Transform rightSpawnPoint2;
     public Transform leftSpawnPoint3;
     public Transform rightSpawnPoint3;
-    public Transform leftSpawnPoint4; // Shared by FallTrigger4 and FallTrigger5
-    public Transform rightSpawnPoint6; // Special spawn point for FallTrigger6
+    public Transform leftSpawnPoint4; // Used by FallTrigger5
 
     private GameObject currentMonster;
     private int fallTriggerCount = 0; // Tracks how many fall triggers have been hit
@@ -34,20 +31,16 @@ public class MonsterSpawner : MonoBehaviour
         switch (fallTriggerCount)
         {
             case 1:
+                // Randomly spawn left or right for FallTrigger1
                 spawnPosition = (Random.Range(0, 2) == 0) ? leftSpawnPoint1.position : rightSpawnPoint1.position;
                 break;
             case 2:
-                spawnPosition = (Random.Range(0, 2) == 0) ? leftSpawnPoint2.position : rightSpawnPoint2.position;
-                break;
-            case 3:
+                // Randomly spawn left or right for FallTrigger3
                 spawnPosition = (Random.Range(0, 2) == 0) ? leftSpawnPoint3.position : rightSpawnPoint3.position;
                 break;
-            case 4:
-            case 5:
+            case 3:
+                // Always spawn left for FallTrigger5 using LeftSpawnPoint4
                 spawnPosition = leftSpawnPoint4.position;
-                break;
-            case 6:
-                spawnPosition = rightSpawnPoint6.position;
                 break;
             default:
                 Debug.LogWarning("No more fall triggers left!");
@@ -61,7 +54,7 @@ public class MonsterSpawner : MonoBehaviour
         MonsterBehavior monsterBehavior = currentMonster.GetComponent<MonsterBehavior>();
         if (monsterBehavior != null)
         {
-            monsterBehavior.StartChasingForLimitedTime(9f); // Chase for 9 seconds
+            monsterBehavior.StartChasingForLimitedTime(9f);
         }
         else
         {
