@@ -50,11 +50,11 @@ public class MonsterSpawner : MonoBehaviour
         // Instantiate the new monster at the chosen spawn position
         currentMonster = Instantiate(monsterPrefab, spawnPosition, Quaternion.identity);
 
-        // Start chasing Riley for a limited time (e.g., 9 seconds)
+        // Start chasing Riley for a limited time (e.g., 7.5 seconds)
         MonsterBehavior monsterBehavior = currentMonster.GetComponent<MonsterBehavior>();
         if (monsterBehavior != null)
         {
-            monsterBehavior.StartChasingForLimitedTime(9f);
+            monsterBehavior.StartChasingForLimitedTime(7.5f);
         }
         else
         {
