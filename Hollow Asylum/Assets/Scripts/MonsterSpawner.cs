@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class MonsterSpawner : MonoBehaviour
 {
+    // Singleton instance of MonsterSpawner
+    public static MonsterSpawner Instance { get; private set; }
+
     // Spawn points for each fall trigger
     public Transform leftSpawnPoint1;
     public Transform rightSpawnPoint1;
@@ -13,6 +16,19 @@ public class MonsterSpawner : MonoBehaviour
     private int fallTriggerCount = 0; // Tracks how many fall triggers have been hit
 
     public GameObject monsterPrefab; // Assign the monster prefab in the Inspector
+
+    private void Awake()
+    {
+        // If an instance already exists and it's not this one, destroy this object to enforce the singleton pattern
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            Instance = this;
+        }
+    }
 
     public void SpawnMonster()
     {

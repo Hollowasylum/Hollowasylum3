@@ -9,6 +9,7 @@ TagManager:
   - Wall
   - Monster
   - Monster 2
+  - MiniMonster
   layers:
   - Default
   - TransparentFX
