@@ -11,15 +11,19 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 velocity = Vector2.zero; // For smooth movement
     private bool isGrounded;
 
+    // Control sprinting permission
+    private bool canSprint = false;    // Initially, Riley can't sprint
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>(); // Get the Rigidbody2D component
+        moveSpeed = normalSpeed;          // Set the initial movement speed to normal
     }
 
     void Update()
     {
-        // Check if Shift is pressed to set the movement speed
-        if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
+        // Check if sprinting is allowed
+        if (canSprint && (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift)))
         {
             moveSpeed = sprintSpeed;
         }
@@ -49,5 +53,11 @@ public class PlayerMovement : MonoBehaviour
         // Perform a small raycast to determine if the player is grounded
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 0.1f, LayerMask.GetMask("Ground"));
         return hit.collider != null;
+    }
+
+    // Method to unlock sprinting
+    public void UnlockSprinting()
+    {
+        canSprint = true;
     }
 }

@@ -22,6 +22,9 @@ public class MonsterSpawner : MonoBehaviour
     public AudioSource chaseMusicSource;    // Assign in the Inspector
     public AudioSource backgroundMusicSource; // Assign in the Inspector
 
+    // Reference to the PlayerMovement script
+    public PlayerMovement rileyMovement; // Assign in the Inspector
+
     private void Awake()
     {
         // Singleton pattern setup
@@ -92,6 +95,16 @@ public class MonsterSpawner : MonoBehaviour
         if (chaseMusicSource != null && !chaseMusicSource.isPlaying)
         {
             chaseMusicSource.Play();
+        }
+
+        // Unlock sprinting for Riley
+        if (rileyMovement != null)
+        {
+            rileyMovement.UnlockSprinting();
+        }
+        else
+        {
+            Debug.LogError("RileyMovement reference not assigned in MonsterSpawner.");
         }
     }
 }
