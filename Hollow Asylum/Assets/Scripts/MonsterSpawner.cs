@@ -1,3 +1,4 @@
+using System.Collections; // Required for IEnumerator and coroutines
 using UnityEngine;
 
 public class MonsterSpawner : MonoBehaviour
@@ -17,9 +18,13 @@ public class MonsterSpawner : MonoBehaviour
 
     public GameObject monsterPrefab; // Assign the monster prefab in the Inspector
 
+    // Audio for chase music and background music
+    public AudioSource chaseMusicSource;    // Assign in the Inspector
+    public AudioSource backgroundMusicSource; // Assign in the Inspector
+
     private void Awake()
     {
-        // If an instance already exists and it's not this one, destroy this object to enforce the singleton pattern
+        // Singleton pattern setup
         if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
@@ -75,6 +80,18 @@ public class MonsterSpawner : MonoBehaviour
         else
         {
             Debug.LogError("MonsterBehavior component not found on the spawned monster.");
+        }
+
+        // Stop the background music
+        if (backgroundMusicSource != null && backgroundMusicSource.isPlaying)
+        {
+            backgroundMusicSource.Stop();
+        }
+
+        // Play chase music
+        if (chaseMusicSource != null && !chaseMusicSource.isPlaying)
+        {
+            chaseMusicSource.Play();
         }
     }
 }
