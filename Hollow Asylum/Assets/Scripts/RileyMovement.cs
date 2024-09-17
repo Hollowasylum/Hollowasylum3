@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 velocity = Vector2.zero; // For smooth movement
     private bool isGrounded;
 
+    public AudioSource audioPlayer;
+
     // Control sprinting permission
     private bool canSprint = false;    // Initially, Riley can't sprint
 
@@ -60,4 +62,5 @@ public class PlayerMovement : MonoBehaviour
     {
         canSprint = true;
     }
+
 }
