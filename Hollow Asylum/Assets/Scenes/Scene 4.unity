@@ -6332,7 +6332,7 @@ MonoBehaviour:
   player: {fileID: 1614793814}
   moveSpeed: 5
   movementAudio: {fileID: 798225700}
-  slowPitch: 2
+  soundPlayInterval: 0.8
 --- !u!114 &737417843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6812,10 +6812,10 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d0402b1a475504249ab3dd49981ce2f0, type: 3}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 27b0d6ae9037e4192b0c80b8dc9373c3, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 0.29
   Loop: 0
   Mute: 0
   Spatialize: 0
