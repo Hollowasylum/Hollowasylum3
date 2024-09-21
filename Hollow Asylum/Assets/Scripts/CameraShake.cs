@@ -5,34 +5,29 @@ public class CameraShake : MonoBehaviour
 {
     private Coroutine shakeCoroutine;
 
-    private IEnumerator Shake(float duration, float magnitude)
+    private IEnumerator Vibrate(float duration, float magnitude)
     {
         Vector3 originalPosition = transform.localPosition;
-
         float elapsed = 0.0f;
 
         while (elapsed < duration)
         {
-            // Fast up-and-down shake
-            float x = Mathf.Sin(Time.time * 30f) * magnitude; // Adjusted frequency for visibility
-            float y = Mathf.Sin(Time.time * 30f) * magnitude; // Adjusted frequency for visibility
-
-            transform.localPosition = new Vector3(originalPosition.x + x, originalPosition.y + y, originalPosition.z);
-
+            // Stronger up and down vibration
+            transform.localPosition = new Vector3(originalPosition.x, originalPosition.y + Mathf.Sin(elapsed * 30) * magnitude, originalPosition.z);
             elapsed += Time.deltaTime;
-            yield return null;
+            yield return null; // Wait for the next frame
         }
 
         transform.localPosition = originalPosition; // Reset position
     }
 
-    public void TriggerShake(float duration, float magnitude)
+    public void TriggerVibrate(float duration, float magnitude)
     {
         if (shakeCoroutine != null)
         {
-            StopCoroutine(shakeCoroutine); // Stop any ongoing shake
+            StopCoroutine(shakeCoroutine); // Stop any ongoing vibration
         }
-        shakeCoroutine = StartCoroutine(Shake(duration, magnitude));
+        shakeCoroutine = StartCoroutine(Vibrate(duration, magnitude));
     }
 
     public void StopShake()
@@ -45,3 +40,4 @@ public class CameraShake : MonoBehaviour
         }
     }
 }
+

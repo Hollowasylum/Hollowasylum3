@@ -6,7 +6,7 @@ public class MonsterBehavior : MonoBehaviour
     public float moveSpeed = 3f;      // Monster's speed (slowed down)
     public AudioSource movementAudio; // Audio source for monster movement sound
     public CameraShake cameraShake;   // Reference to the CameraShake script
-    public float distanceThreshold = 2f; // Distance to trigger camera shake
+    public float distanceThreshold = 2f; // Distance to trigger camera vibration
 
     private bool isChasing = false;   // Whether the monster is chasing Riley
     private bool isJumpScared = false; // Whether the player is jumpscared
@@ -28,18 +28,18 @@ public class MonsterBehavior : MonoBehaviour
             Vector2 direction = (player.position - transform.position).normalized;
             transform.position = Vector2.MoveTowards(transform.position, player.position, moveSpeed * Time.deltaTime);
 
-            // Check the distance to trigger camera shake
+            // Check the distance to trigger camera vibration
             if (Vector2.Distance(transform.position, player.position) < distanceThreshold && !isJumpScared)
             {
-                Debug.Log("Triggering continuous camera shake!"); // Debug line
+                Debug.Log("Distance is close enough for vibrating!"); // Debug line
                 if (cameraShake != null)
                 {
-                    cameraShake.TriggerShake(Mathf.Infinity, 1.0f); // Increase magnitude for noticeable shake
+                    cameraShake.TriggerVibrate(0.5f, 0.2f); // Strong vibration when close
                 }
             }
             else if (isJumpScared)
             {
-                cameraShake.StopShake(); // Stop shaking when jumpscared
+                cameraShake.StopShake(); // Stop vibrating when jumpscared
             }
 
             // Play the movement sound if it's not already playing
@@ -83,7 +83,7 @@ public class MonsterBehavior : MonoBehaviour
     public void TriggerJumpScare()
     {
         isJumpScared = true;
-        cameraShake.StopShake(); // Stop shaking on jumpscare
+        cameraShake.StopShake(); // Stop vibrating on jumpscare
         // Add your jumpscare logic here (e.g., play a jumpscare animation, sound, etc.)
     }
 
