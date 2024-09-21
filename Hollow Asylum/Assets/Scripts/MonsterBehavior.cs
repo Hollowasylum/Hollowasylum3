@@ -5,8 +5,12 @@ public class MonsterBehavior : MonoBehaviour
     public Transform player;          // Riley's position (assign in Unity)
     public float moveSpeed = 3f;      // Monster's speed (slowed down)
     public AudioSource movementAudio; // Audio source for monster movement sound
+    public float shakeDistance = 2f;   // Distance within which to shake the camera
+    public float shakeDuration = 0.5f; // Duration of the camera shake
+    public float shakeMagnitude = 0.1f; // Magnitude of the shake
 
     private bool isChasing = false;   // Whether the monster is chasing Riley
+    private CameraShake cameraShake;  // Reference to the CameraShake script
 
     void Start()
     {
@@ -15,6 +19,8 @@ public class MonsterBehavior : MonoBehaviour
         {
             movementAudio.loop = true; // Set the sound to loop
         }
+
+        cameraShake = Camera.main.GetComponent<CameraShake>();
     }
 
     void Update()
@@ -29,6 +35,15 @@ public class MonsterBehavior : MonoBehaviour
             if (movementAudio != null && !movementAudio.isPlaying)
             {
                 movementAudio.Play();
+            }
+
+            // Check distance to the player and shake camera if close
+            if (Vector2.Distance(transform.position, player.position) < shakeDistance)
+            {
+                if (cameraShake != null)
+                {
+                    cameraShake.ShakeCamera(shakeDuration, shakeMagnitude);
+                }
             }
         }
         else
