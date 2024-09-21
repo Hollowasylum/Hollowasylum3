@@ -4239,6 +4239,7 @@ GameObject:
   m_Component:
   - component: {fileID: 518860533}
   - component: {fileID: 518860534}
+  - component: {fileID: 518860535}
   m_Layer: 0
   m_Name: RileyCamera
   m_TagString: Untagged
@@ -4301,6 +4302,18 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 1018224417}
+--- !u!114 &518860535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 518860532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f6a68fda29a14bd3a301c4285fe8f01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -6345,9 +6358,8 @@ MonoBehaviour:
   player: {fileID: 1614793814}
   moveSpeed: 5
   movementAudio: {fileID: 0}
-  shakeDistance: 5
-  shakeDuration: 0.5
-  shakeMagnitude: 0.2
+  cameraShake: {fileID: 518860535}
+  distanceThreshold: 2
 --- !u!114 &737417843
 MonoBehaviour:
   m_ObjectHideFlags: 0
