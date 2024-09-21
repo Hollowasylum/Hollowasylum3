@@ -5,10 +5,17 @@ public class MonsterBehavior : MonoBehaviour
     public Transform player;          // Riley's position (assign in Unity)
     public float moveSpeed = 3f;      // Monster's speed (slowed down)
     public AudioSource movementAudio; // Audio source for monster movement sound
-    public float soundPlayInterval = 0.3f; // Interval for playing the sound when moving
 
     private bool isChasing = false;   // Whether the monster is chasing Riley
-    private float nextSoundTime = 0f; // Time when the next sound should play
+
+    void Start()
+    {
+        // Ensure the audio source is set to loop
+        if (movementAudio != null)
+        {
+            movementAudio.loop = true; // Set the sound to loop
+        }
+    }
 
     void Update()
     {
@@ -18,36 +25,41 @@ public class MonsterBehavior : MonoBehaviour
             Vector2 direction = (player.position - transform.position).normalized;
             transform.position = Vector2.MoveTowards(transform.position, player.position, moveSpeed * Time.deltaTime);
 
-            // Play the movement sound at intervals while the monster is moving
-            if (Time.time >= nextSoundTime)
+            // Play the movement sound if it's not already playing
+            if (movementAudio != null && !movementAudio.isPlaying)
             {
-                PlayMovementSound();
-                nextSoundTime = Time.time + soundPlayInterval; // Set next sound time
+                movementAudio.Play();
             }
         }
-    }
-
-    // Play the movement sound
-    void PlayMovementSound()
-    {
-        if (movementAudio != null && !movementAudio.isPlaying)
+        else
         {
-            movementAudio.Play();
+            // Stop the sound when the monster is not chasing
+            if (movementAudio != null && movementAudio.isPlaying)
+            {
+                movementAudio.Stop();
+            }
         }
     }
 
     public void StartChasing()
     {
         isChasing = true;
-        nextSoundTime = Time.time; // Reset sound timer when chasing starts
+
+        // Start playing the movement sound if not already playing
+        if (movementAudio != null && !movementAudio.isPlaying)
+        {
+            movementAudio.Play();
+        }
     }
 
     public void StopChasing()
     {
         isChasing = false;
+
+        // Stop playing the movement sound
         if (movementAudio != null && movementAudio.isPlaying)
         {
-            movementAudio.Stop(); // Stop the sound when the monster stops moving
+            movementAudio.Stop();
         }
     }
 
