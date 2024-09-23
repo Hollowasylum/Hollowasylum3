@@ -6,7 +6,7 @@ public class MonsterBehavior : MonoBehaviour
     public float moveSpeed = 3f;      // Monster's speed (slowed down)
     public AudioSource movementAudio; // Audio source for monster movement sound
     public CameraShake cameraShake;   // Reference to the CameraShake script
-    public float distanceThreshold = 2f; // Distance to trigger camera vibration
+    public float distanceThreshold = 5f; // Distance to trigger camera vibration (start further)
 
     private bool isChasing = false;   // Whether the monster is chasing Riley
     private bool isJumpScared = false; // Whether the player is jumpscared
@@ -31,10 +31,10 @@ public class MonsterBehavior : MonoBehaviour
             // Check the distance to trigger camera vibration
             if (Vector2.Distance(transform.position, player.position) < distanceThreshold && !isJumpScared)
             {
-                Debug.Log("Distance is close enough for vibrating!"); // Debug line
+                Debug.Log("Monster is close enough for vibrating!"); // Debug line
                 if (cameraShake != null)
                 {
-                    cameraShake.TriggerVibrate(0.5f, 0.2f); // Strong vibration when close
+                    cameraShake.TriggerVibrate(0.5f, 0.2f); // Strong vibration when closer
                 }
             }
             else if (isJumpScared)

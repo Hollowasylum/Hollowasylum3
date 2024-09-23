@@ -6274,7 +6274,7 @@ MonoBehaviour:
   moveSpeed: 5
   movementAudio: {fileID: 0}
   cameraShake: {fileID: 519420034}
-  distanceThreshold: 2
+  distanceThreshold: 60
 --- !u!114 &737417843
 MonoBehaviour:
   m_ObjectHideFlags: 0
